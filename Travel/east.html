@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paradise | East India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Thumbnail Styles */
+    .thumbnails {
+      margin-right: -15px;
+    }
+
+    .thumbnails a {
+      float: bottom;
+      width: 25%;
+      box-sizing: border-box;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .thumbnails:hover img {
+      opacity: 0.6;
+      transform: scale(0.92);
+    }
+
+    .thumbnails:hover img:hover {
+      opacity: 1;
+      transform: scale(1) rotate(2deg);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 767px) {
+      .thumbnails a {
+        width: 50%;
+      }
+    }
+
+    /* thumbnail ends */
+    /* Navigation */
+    img {
+      width: 100%;
+      height: 170%;
+      filter: none;
+
+    }
+
+    header navigate {
+      background-color: white;
+    }
+
+    .img1 {
+      padding-right: 500px;
+      padding-bottom: 10px;
+      width: 15%;
+      height: 15%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .img2 {
+      margin-top: 2px solid rgb(175, 175, 212);
+      padding-top: 2%;
+    }
+
+    .navigate ul {
+      margin: 10px;
+      padding: 0;
+      display: block;
+    }
+
+    .navigate li {
+      padding-left: 35px;
+      list-style: none;
+      float: left;
+      margin-right: 30px;
+    }
+
+    .navigate .home a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url(../Travel/images/homelogo.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .about a {
+      display: block;
+      width: 59px;
+      height: 80px;
+      background-image: url(../Travel/images/About.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .destinate a {
+      display: block;
+      width: 59px;
+      height: 55px;
+      size: 100%;
+      border-bottom: 4px solid rgb(80, 80, 192);
+      padding-bottom: 25px;
+      background-image: url(../Travel/images/Destination.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .ideas a {
+      display: block;
+      width: 57px;
+      height: 100px;
+      size: 50%;
+      background-image: url(../Travel/images/Idea.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .contact a {
+      display: block;
+      width: 53px;
+      height: 60px;
+      size: 70%;
+      background-image: url(../Travel/images/contactus.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .home a:hover {
+      background-position: -49px 0;
+    }
+
+    .contact a:hover {
+      background-position: -53px 0;
+    }
+
+    .destinate a:hover {
+      background-image: url(../Travel/images/Destination1.svg);
+    }
+
+    .ideas a:hover {
+      background-image: url(../Travel/images/Idea1.svg);
+    }
+
+    .about a:hover {
+      background-image: url(../Travel/images/About1.svg);
+    }
+
+    /* Navigation ends */
+
+    html {
+      padding: 20px;
+      background-color: rgb(172, 172, 226);
+      background-image: url(../Travel/images/blue1.jpg);
+      background-size: 5000px;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      margin: 30px 30px;
+      padding: 30px;
+      border-top: 4px solid rgb(97, 97, 235);
+      border-bottom: 4px solid rgb(97, 97, 235);
+      background-color: white;
+    }
+
+    .oneimg {
+      padding: 30px;
+      padding-bottom: 2050px;
+    }
+
+    div.gallery {
+      margin: 6px;
+      border: 1px solid white;
+      float: left;
+    }
+
+    div.gallery:hover {
+      border: 1px solid black;
+    }
+
+    div.gallery img {
+      width: 300px;
+      height: 200px;
+    }
+
+    div.description {
+      padding: 15px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="img1">
+      <a href="../main.html">
+        <img src="../Travel/images/logo1.png"></a>
+    </div>
+    <nav class="navigate">
+      <ul>
+        <li class="home"><a href="../main.html" title="Home">Home</a>
+        </li>
+
+        <li class="about"><a href="../Travel/info.html" title="About">About</a>
+        </li>
+
+        <li class="destinate"><a href="../Travel/destinations.html" title="Destinations">Destination</a>
+        </li>
+        <li class="ideas"><a href="../Travel/holidayideas.html" title="Holiday Ideas">Holiday ideas</a>
+        </li>
+
+        <li class="contact"><a href="../Travel/contact.html" title="Contact us">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navigation Ends -->
+  <br><br><br><br><br><br><br>
+  <div class="oneimg" style="background-image: url(images/northbg.jpg); 
+background-repeat: no-repeat; 
+background-size: cover; 
+background-position: initial;">
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30px; color:rgb(1, 1, 71);"><b>East India.</b></p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;"><b>
+        Eastern Zone of India is rich in Cultural Heritage. You can have a taste of beaches, temples, monastries,
+        buddhist circuit with a rural touch. It includes the states Odisha, West Bengal, Bihar, Jharkhand, Arunachal
+        Pradesh, Nagaland,
+        Tripura, Assam, Manipur, Mizoram, Meghalaya, Sikkim.</b>
+    </p>
+    <div class="thumbnails group">
+      <div class="gallery">
+        <a target="_blank" href="images/odishapuribeach.jfif">
+          <img src="images/odishapuribeach.jfif">
+        </a>
+        <div class="description">Odisha-Puri beach<br>Hub for watersports, sand sculptures<br>Amazing Coconut, pearl &
+          food vendors.
+          <br> Also a Hindu sacred place.
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/odishatemple.jpg">
+          <img src="images/odishatemple.jpg">
+        </a>
+        <div class="description">Odisha-Jagannath Temple<br>Land of the lord of Universe<br>Amazing Kalinga
+          architecture,65m<br>
+          One of the chardham pigrimage sites</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/wbsunderban.jpg">
+          <img src="images/wbsunderban.jpg">
+        </a>
+        <div class="description">West Bengal-Sunderban National Park <br>Tiger reserve,Mangrove forests,
+          4624sqkm<br>Must
+          visit for a Tiger
+          lover.Includes birds<br>reptiles,salt-water crocodile.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kolkata1.jpg">
+          <img src="images/kolkata1.jpg">
+        </a>
+        <div class="description">West-Bengal, Kolkata-Victoria Memorial<br>Large marble building, British<br>&>Mughal
+          elements.Muesuem
+          with 25 <br>galleries.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/wbtigerhill.jpg">
+          <img src="images/wbtigerhill.jpg">
+        </a>
+        <div class="description">West-Bengal,Darjeeling,Tiger hill<br>panoramic view of Mount Everest &<br> Mount
+          Kanchenjunga together.
+          <br>11Km from Darjeeling.
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/bodhgaya.jpg">
+          <img src="images/bodhgaya.jpg">
+        </a>
+        <div class="description">Bihar-Bodh Gaya, religious site<br>place where Gautama Buddha is said to <br>have
+          attained Enlightenment<br>
+          Holiest site in Buddhism.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/sonbhandarcaves.jfif">
+          <img src="images/sonbhandarcaves.jfif">
+        </a>
+        <div class="description">Bihar-SonBhandar caves<br>Belonged to Jains.Dated to <br>3rd/4th century reminiscent of
+          the <br>structure of the Barabar Caves.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/ranchirockgarden.webp">
+          <img src="images/ranchirockgarden.webp">
+        </a>
+        <div class="description">Jharkhand-Ranchi rock garden<br>Rocks of Gonda
+          hill<br>Waterfall,sculptures,art<br>Jhula
+          of iron rod.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/dimnalake.jpg">
+          <img src="images/dimnalake.jpg">
+        </a>
+        <div class="description">Jharkhand-Jamshedpur<br>Dimna lake,foot of Dalma hills<br>Ideal for picnics &
+          boating.<br>Mixture of sparse-dense forest.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/zirovalley.jfif">
+          <img src="images/zirovalley.jfif">
+        </a>
+        <div class="description">Arunachal Pradesh,Ziro valley<br>Peace seeker's paradise.<br>Unique tribal group,balmy
+          climate<br>Pine hills,
+          rice fields.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/daporijo.jpg">
+          <img src="images/daporijo.jpg">
+        </a>
+        <div class="description">Arunachal Pradesh,daporijo<br>Tall bamboo forests,pastoral paddy
+          fields<br>trekking,hiking<br>Intercation with
+          Tagin tribe.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/dzukoivalley.jfif">
+          <img src="images/dzukoivalley.jfif">
+        </a>
+        <div class="description">Nagaland,Kohima-Dzukoi Valley<br>Seasonal flowers,flora & fauna<br>2452m above sea
+          level<br>Also known as
+          valley of flowers.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/wokha.jpg">
+          <img src="images/wokha.jpg">
+        </a>
+        <div class="description">Nagaland,Wokha<br>Ground to the Lothas.<br>District of rivers & hills:Mount
+          Tiyi<br>Colorful flowers &
+          orchards.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/tripuramuesuem.jfif">
+          <img src="images/tripuramuesuem.jfif">
+        </a>
+        <div class="description">Tripura Government Muesuem<br>Ujjayanta palace<br>Displays collectibles & history of
+          Tripura<br>
+          Multi-cultural muesuem.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/assamtemple.jfif">
+          <img src="images/assamtemple.jfif">
+        </a>
+        <div class="description">Assam, Guwahati, Kamakhya temple<br>Situated on Nilachal hill<br>Associated with the
+          Dasa
+          Mahavidyas<br>
+          One of the oldest of the 51 Shakti Pithas</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/nonoiteaestate.jpg">
+          <img src="images/nonoiteaestate.jpg">
+        </a>
+        <div class="description">Assam, Nonoi tea estate<br>Nagaon district.Also called Rangamatti.<br>diversifications
+          consist of setting up<br>fisheries
+          Cultivation of Assam lemon.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/manipurpark.jpg">
+          <img src="images/manipurpark.jpg">
+        </a>
+        <div class="description">Manipur,Keibul lamjao national park<br>Floating park, 40sqkm<br>Part of loktak
+          lake<br>Home to brow-antlered deer</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/mizoramcave.jfif">
+          <img src="images/mizoramcave.jfif">
+        </a>
+        <div class="description">Mizoram, Champai, Mura Puk<br>Cluster of 6 manmade caves.<br>Located in Zote village.
+          Legend that<br>
+          it was hiding place for villagers.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kaziranga.jpg">
+          <img src="images/kaziranga.jpg">
+        </a>
+        <div class="description">Assam,Kaziranga National Park-largest<br>population of Indian
+          one-horned<br>rhinoceroses
+          migratory birds, and gray<br>pelicans
+          Home to tigers & elephants.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/meghalaya.jfif">
+          <img src="images/meghalaya.jfif">
+        </a>
+        <div class="description">Meghalaya,NohKaLikai Falls<br>tallest plunge waterfall in India.<br>near
+          Cherrapunji(wettest place on Earth)<br>
+          Its height is 340 metres</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/elephantfalls.jpg">
+          <img src="images/elephantfalls.jpg">
+        </a>
+        <div class="description">Meghalaya,Shillong,Elephant falls<br>Two-tier waterfall. Easy<br>walking trail and
+          stairs. Named<br>
+          after an Elephant like stone at its foot</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kanchenjungafalls.jfif">
+          <img src="images/kanchenjungafalls.jfif">
+        </a>
+        <div class="description">Sikkim,Pelling,Kanchenjunga falls<br> Height of about 100ft<br>Also can view Rimbi
+          falls.<br>
+          Largest waterfall in Sikkim.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/yumthangvalley.jpg">
+          <img src="images/yumthangvalley.jpg">
+        </a>
+        <div class="description">Sikkim,Yumthang Valley<br>Sikkim Valley of Flowers sanctuary<br>nature sanctuary with
+          river, hot springs,<br>
+          surrounded by the Himalayan mountains</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

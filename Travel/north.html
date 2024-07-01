@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paradise | North India</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Thumbnail Styles */
+    .thumbnails {
+      margin-right: -15px;
+    }
+
+    .thumbnails a {
+      float: bottom;
+      width: 25%;
+      box-sizing: border-box;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .thumbnails:hover img {
+      opacity: 0.6;
+      transform: scale(0.92);
+    }
+
+    .thumbnails:hover img:hover {
+      opacity: 1;
+      transform: scale(1) rotate(2deg);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 767px) {
+      .thumbnails a {
+        width: 50%;
+      }
+    }
+
+    /* thumbnail ends */
+    /* Navigation */
+    img {
+      width: 100%;
+      height: 170%;
+      filter: none;
+
+    }
+
+    header navigate {
+      background-color: white;
+    }
+
+    .img1 {
+      padding-right: 500px;
+      padding-bottom: 10px;
+      width: 15%;
+      height: 15%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .img2 {
+      margin-top: 2px solid rgb(175, 175, 212);
+      padding-top: 2%;
+    }
+
+    .navigate ul {
+      margin: 10px;
+      padding: 0;
+      display: block;
+    }
+
+    .navigate li {
+      padding-left: 35px;
+      list-style: none;
+      float: left;
+      margin-right: 30px;
+    }
+
+    .navigate .home a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url(../Travel/images/homelogo.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .about a {
+      display: block;
+      width: 59px;
+      height: 80px;
+      background-image: url(../Travel/images/About.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .destinate a {
+      display: block;
+      width: 59px;
+      height: 55px;
+      size: 100%;
+      border-bottom: 4px solid rgb(80, 80, 192);
+      padding-bottom: 25px;
+      background-image: url(../Travel/images/Destination.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .ideas a {
+      display: block;
+      width: 57px;
+      height: 100px;
+      size: 50%;
+      background-image: url(../Travel/images/Idea.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .contact a {
+      display: block;
+      width: 53px;
+      height: 60px;
+      size: 70%;
+      background-image: url(../Travel/images/contactus.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .home a:hover {
+      background-position: -49px 0;
+    }
+
+    .contact a:hover {
+      background-position: -53px 0;
+    }
+
+    .destinate a:hover {
+      background-image: url(../Travel/images/Destination1.svg);
+    }
+
+    .ideas a:hover {
+      background-image: url(../Travel/images/Idea1.svg);
+    }
+
+    .about a:hover {
+      background-image: url(../Travel/images/About1.svg);
+    }
+
+    /* Navigation ends */
+
+    html {
+      padding: 20px;
+      background-color: rgb(172, 172, 226);
+      background-image: url(../Travel/images/blue1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      margin: 30px 30px;
+      padding: 30px;
+      padding-bottom: 50px;
+      border-top: 4px solid rgb(97, 97, 235);
+      border-bottom: 4px solid rgb(97, 97, 235);
+      background-color: white;
+    }
+
+    .oneimg {
+      padding: 50px 50px 50px 50px;
+      padding-bottom: 1580px;
+    }
+
+    div.gallery {
+      margin: 6px;
+      border: 1px solid white;
+      float: left;
+    }
+
+    div.gallery:hover {
+      border: 1px solid black;
+    }
+
+    div.gallery img {
+      width: 300px;
+      height: 200px;
+    }
+
+    div.description {
+      padding: 15px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="img1">
+      <a href="../main.html">
+        <img src="../Travel/images/logo1.png"></a>
+    </div>
+    <nav class="navigate">
+      <ul>
+        <li class="home"><a href="../main.html" title="Home">Home</a>
+        </li>
+
+        <li class="about"><a href="../Travel/info.html" title="About">About</a>
+        </li>
+
+        <li class="destinate"><a href="../Travel/destinations.html" title="Destinations">Destination</a>
+        </li>
+        <li class="ideas"><a href="../Travel/holidayideas.html" title="Holiday Ideas">Holiday ideas</a>
+        </li>
+
+        <li class="contact"><a href="../Travel/contact.html" title="Contact us">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navigation Ends -->
+  <br><br><br><br><br><br><br>
+  <div class="oneimg" style="background-image: url(images/northbg.jpg); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: initial;">
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30px; color:rgb(1, 1, 71);"><b>North India.</b></p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;"><b>
+        North India is a treasure of vast authentic culture and nature. It's rich cultural heritage leaves you
+        overwhelmed.
+        Take this chance and escape from the monotonous citylife and start explore North India.
+        North India comprises Jammu & Kashmir, Delhi, Uttar Pradesh, Haryana, Punjab, Rajasthan, Himachal Pradesh and
+        Uttarakhand.</b>
+    </p>
+    <div class="thumbnails group">
+      <div class="gallery">
+        <a target="_blank" href="images/kashmirpahalgham.jpeg">
+          <img src="images/kashmirpahalgham.jpeg">
+        </a>
+        <div class="description">Kashmir<br>Pahalgham-beauty of lakes<br>and rafting experience.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kashmirsonamarg.jpeg">
+          <img src="images/kashmirsonamarg.jpeg">
+        </a>
+        <div class="description">Kashmir<br>Sonmarg - sighting Thajiwas glacier,<br>lush meadows & mountains.
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kashmirsrinagar.jpg">
+          <img src="images/kashmirsrinagar.jpg">
+        </a>
+        <div class="description">Kashmir<br>Srinagar - sightseeing Mughal gardens,<br>houseboat stay.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/kashmirpatnitop.jpg">
+          <img src="images/kashmirpatnitop.jpg">
+        </a>
+        <div class="description">Kashmir<br>Patnitop - perfect hill station holiday<br>Paralgliding and skiing.
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/delhimughalgarden.jpg">
+          <img src="images/delhimughalgarden.jpg">
+        </a>
+        <div class="description">Delhi - Mughal Garden</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/delhiqutubminar.jpg">
+          <img src="images/delhiqutubminar.jpg">
+        </a>
+        <div class="description">Delhi - Qutub Minar</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/delhiredfort.jpg">
+          <img src="images/delhiredfort.jpg">
+        </a>
+        <div class="description">Delhi - Red Fort</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/upvaranasi.jfif">
+          <img src="images/upvaranasi.jfif">
+        </a>
+        <div class="description">Uttar Pradesh - Varanasi</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/upagra.jfif">
+          <img src="images/upagra.jfif">
+        </a>
+        <div class="description">Uttar Pradesh - Agra<br>Taj Mahal</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/haryanakarnalake.jpg">
+          <img src="images/haryanakarnalake.jpg">
+        </a>
+        <div class="description">Haryana<br>Karnal - Karna lake</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/haryanamornihills.png">
+          <img src="images/haryanamornihills.png">
+        </a>
+        <div class="description">Haryana<br>Morni hills</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/punjabtemple.jpg">
+          <img src="images/punjabtemple.jpg">
+        </a>
+        <div class="description">Punjab-Amritsar<br> Gurudwara - Golden temple</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/punjabrockgarden.jfif">
+          <img src="images/punjabrockgarden.jfif">
+        </a>
+        <div class="description">Punjab-Chandigarh<br> Rock garden also called<br>Nek Chand Saini's Rock Garden
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/punjabbaradarigarden.jpg">
+          <img src="images/punjabbaradarigarden.jpg">
+        </a>
+        <div class="description">Punjab-Patiala Baradari garden<br>Built in Mughal style<br>Baradari-12
+          entrances.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/rajasthandausa.jpg">
+          <img src="images/rajasthandausa.jpg">
+        </a>
+        <div class="description">Rajasthan - 55Km from Jaipur on NH11<br> Dausa(meaning) beautiful like heaven.
+          Has<br>history & offers rural experience.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/rajasthankarauli.jfif">
+          <img src="images/rajasthankarauli.jfif">
+        </a>
+        <div class="description">Rajasthan - Karauli<br>Land of Red sandstone<br> Near Dausa.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/hpshimla.jpg">
+          <img src="images/hpshimla.jpg">
+        </a>
+        <div class="description">Himachal Pradesh-Shimla<br>Queen of hills<br> hill town nestled at an altitude
+          of 2205
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/hpnationalpark.png">
+          <img src="images/hpnationalpark.png">
+        </a>
+        <div class="description">Himachal Pradesh-Manali<br>Great Himalayan National Park<br>Brown bear,Snow
+          leopard.
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/uttaratemple.jfif">
+          <img src="images/uttaratemple.jfif">
+        </a>
+        <div class="description">Uttarakhand-Nainital<br>Kainchi Dham<br>Hanuman temple & Ashram.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/uttaranainilake.jpg">
+          <img src="images/uttaranainilake.jpg">
+        </a>
+        <div class="description">Uttarakhand-Nainital lake,Kumaon<br>also called Naini lake Kumaon,<br> it is
+          27m deep.
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

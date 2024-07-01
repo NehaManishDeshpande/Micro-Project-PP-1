@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paradise | South India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+     /* Thumbnail Styles */
+     .thumbnails {
+      margin-right: -15px;
+    }
+
+    .thumbnails a {
+      float: bottom;
+      width: 25%;
+      box-sizing: border-box;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .thumbnails:hover img {
+      opacity: 0.6;
+      transform: scale(0.92);
+    }
+
+    .thumbnails:hover img:hover {
+      opacity: 1;
+      transform: scale(1) rotate(2deg);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 767px) {
+      .thumbnails a {
+        width: 50%;
+      }
+    }
+
+    /* thumbnail ends */
+    /* Navigation */
+    img {
+      width: 100%;
+      height: 170%;
+      filter: none;
+
+    }
+
+    header navigate {
+      background-color: white;
+    }
+
+    .img1 {
+      padding-right: 500px;
+      padding-bottom: 10px;
+      width: 15%;
+      height: 15%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .img2 {
+      margin-top: 2px solid rgb(175, 175, 212);
+      padding-top: 2%;
+    }
+
+    .navigate ul {
+      margin: 10px;
+      padding: 0;
+      display: block;
+    }
+
+    .navigate li {
+      padding-left: 35px;
+      list-style: none;
+      float: left;
+      margin-right: 30px;
+    }
+
+    .navigate .home a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url(../Travel/images/homelogo.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .about a {
+      display: block;
+      width: 59px;
+      height: 80px;
+      background-image: url(../Travel/images/About.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .destinate a {
+      display: block;
+      width: 59px;
+      height: 55px;
+      size: 100%;
+      border-bottom: 4px solid rgb(80, 80, 192);
+      padding-bottom: 30px;
+      background-image: url(../Travel/images/Destination.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .ideas a {
+      display: block;
+      width: 57px;
+      height: 100px;
+      size: 50%;
+      background-image: url(../Travel/images/Idea.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .navigate .contact a {
+      display: block;
+      width: 53px;
+      height: 60px;
+      size: 70%;
+      background-image: url(../Travel/images/contactus.svg);
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      max-width: 940px;
+    }
+
+    .home a:hover {
+      background-position: -49px 0;
+    }
+
+    .contact a:hover {
+      background-position: -53px 0;
+    }
+
+    .destinate a:hover {
+      background-image: url(../Travel/images/Destination1.svg);
+    }
+
+    .ideas a:hover {
+      background-image: url(../Travel/images/Idea1.svg);
+    }
+
+    .about a:hover {
+      background-image: url(../Travel/images/About1.svg);
+    }
+
+    /* Navigation ends */
+    html {
+      padding: 20px;
+      background-color: rgb(172, 172, 226);
+      background-image: url(../Travel/images/blue1.jpg);
+      background-size: 4000px;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      margin: 30px 30px;
+      padding: 30px;
+      border-top: 4px solid rgb(97, 97, 235);
+      border-bottom: 4px solid rgb(97, 97, 235);
+      background-color: white;
+    }
+
+    .oneimg {
+      padding: 30px;
+      padding-bottom: 1600px;
+    }
+
+    div.gallery {
+      margin: 6px;
+      border: 1px solid white;
+      float: left;
+    }
+
+    div.gallery:hover {
+      border: 1px solid black;
+    }
+
+    div.gallery img {
+      width: 300px;
+      height: 200px;
+    }
+
+    div.description {
+      padding: 15px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="img1">
+      <a href="../main.html">
+        <img src="../Travel/images/logo1.png"></a>
+    </div>
+    <nav class="navigate">
+      <ul>
+        <li class="home"><a href="../main.html" title="Home">Home</a>
+        </li>
+
+        <li class="about"><a href="../Travel/info.html" title="About">About</a>
+        </li>
+
+        <li class="destinate"><a href="../Travel/destinations.html" title="Destinations">Destination</a>
+        </li>
+        <li class="ideas"><a href="../Travel/holidayideas.html" title="Holiday Ideas">Holiday ideas</a>
+        </li>
+
+        <li class="contact"><a href="../Travel/contact.html" title="Contact us">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navigation Ends -->
+  <br><br><br><br><br><br><br>
+  <div class="oneimg" style="background-image: url(images/northbg.jpg); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: initial;">
+
+
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30px; color:rgb(1, 1, 71);"><b>South India.</b></p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;"><b>
+        Lush green tea and coffee plantations on the slopes with a backdrop of different hues of blue sky fill your
+        heart with solace.
+        south India comprises Andhra Pradesh, Karnataka, Tamil Nadu, Kerala, Telangana and the Union Territories of
+        Lakshadweep, Andaman and Nicobar Islands and Puducherry.</b>
+    </p>
+    <div class="thumbnails group">
+    <div class="gallery">
+      <a target="_blank" href="images/aptirupati.jpg">
+        <img src="images/aptirupati.jpg">
+      </a>
+      <div class="description">Andhra Pradesh-Tirupati Balaji Temple <br>Tirumala hills, group of 7 hills<br>adds to the
+        beauty.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/apvizagbeach.jpg">
+        <img src="images/apvizagbeach.jpg">
+      </a>
+      <div class="description">Andhra Pradesh-Vishakhapatnam<br>Beach paradise of<br>Andhra Pradesh</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/coorg.jpg">
+        <img src="images/coorg.jpg">
+      </a>
+      <div class="description">Karnataka<br>Coorg-hill station,wildlife sanctuaries.<br>Nagarhole national park.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/karnataka.jpg">
+        <img src="images/karnataka.jpg">
+      </a>
+      <div class="description">Karnataka<br>Hampi - temples, elephant<br>stables & other attractions.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/mysorepalace.jpg">
+        <img src="images/mysorepalace.jpg">
+      </a>
+      <div class="description">Karnataka-Mysore, Mysore palace<br>Heart of the city,historical<br>palace,maginificent
+        architecture.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/ooty.jpg">
+        <img src="images/ooty.jpg">
+      </a>
+      <div class="description">Tamil Nadu - Ooty,<br>in the Nilgiri hills,known for<br>tea plantations.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/mahabalipurambeach.jpg">
+        <img src="images/mahabalipurambeach.jpg">
+      </a>
+      <div class="description">Tamil Nadu-Mahabalipuram beach<br>58km from Chennai.<br>Shore temple is nearby.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/kanyakumaribeach.jpg">
+        <img src="images/kanyakumaribeach.jpg">
+      </a>
+      <div class="description">Tamil Nadu-Kanyakumari beach<br>one of the most pristine beaches.<br>Must visit.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/thanumalayantemple.jpg">
+        <img src="images/thanumalayantemple.jpg">
+      </a>
+      <div class="description">Tamil Nadu-Thanumalayan Temple<br>Place of worship in Kanyakaumari.<br>Lord Shiva,Vishnu
+        & Brahma</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/keralamunnar.jpg">
+        <img src="images/keralamunnar.jpg">
+      </a>
+      <div class="description">Kerala - Munnar <br>Exotic hill station, breathtaking cliffs,<br>tea and spice
+        plantations.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/keralabackwaters.jpg">
+        <img src="images/keralabackwaters.jpg">
+      </a>
+      <div class="description">Kerala - Alleppey backwaters<br>network of 1500 km of canals both<br>manmade and natural.
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/Padmanabhaswamy.jpg">
+        <img src="images/Padmanabhaswamy.jpg">
+      </a>
+      <div class="description">Kerala - Padmanabhaswamy Temple,<br>Thiruvananthapuram<br>Considered richest place of
+        worship.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/telengana1.jpg">
+        <img src="images/telengana1.jpg">
+      </a>
+      <div class="description">Telangana-Papikondalu<br> Mountain range along Godavari river.<br>great scenic beauty.
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/telengana2.jpg">
+        <img src="images/telengana2.jpg">
+      </a>
+      <div class="description">Telangana-Bhadrachalam<br>Instances from Ramayana<br>vibrant river,glorious place.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/lakshadweep.jpg">
+        <img src="images/lakshadweep.jpg">
+      </a>
+      <div class="description">Lakshadweep-Agatti, One of the<br>most beautiful lagoons in Lakshadweep<br>Situated in
+        coral attol.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/cellularjail.jpg">
+        <img src="images/cellularjail.jpg">
+      </a>
+      <div class="description">Andaman and Nicobar islands<br>Port Blair - Cellular jail<br>It was a colonial prison.
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/puducherry1.jfif">
+        <img src="images/puducherry1.jfif">
+      </a>
+      <div class="description">Puducherry<br>Along Bay of Bengal, 1.2km stretch<br> Starts from war memorial.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="images/scubadiving.jpg">
+        <img src="images/scubadiving.jpg">
+      </a>
+      <div class="description">Andaman and Nicobar islands<br>Havelock island for scuba diving<br>Rich marine life,
+        clear waters.</div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
